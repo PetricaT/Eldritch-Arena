@@ -1,0 +1,7 @@
+The music structure is as follows:
+
+Arena1.ogg
+Arena2.ogg
+Arena3.ogg
+
+The game will look for files with these names and use them if they are present, otherwise it will be silent.
