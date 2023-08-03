@@ -1,5 +1,5 @@
 # Godot-specific ignores
-.import/
+*.import
 .godot/
 
 # Imported translations (automatically generated from CSV files)
@@ -23,6 +23,11 @@ mono_crash.*.json
 # Android ignores
 android/
 
-# Stuff I don't have the right to redistribute ignore
-src/sounds/music/*
-!src/sounds/music/*.txt
+# Stuff I don't have the right to redistribute
+src/sounds/music/*.ogg
+
+# Files that should not be shipped ever
+# These are here because messing around
+*.webm
+*.mkv
+*.mp4
