@@ -11,5 +11,19 @@ config_version=5
 [application]
 
 config/name="Eldritch-arena"
+config/description="The game that is all about killing demons, in a arena fashion shooter game!"
+run/main_scene="res://src/scenes/main.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
+
+[gui]
+
+fonts/dynamic_fonts/use_oversampling=false
+
+[physics]
+
+2d/default_gravity=981.0
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=3
