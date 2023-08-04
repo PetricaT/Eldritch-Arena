@@ -5,7 +5,7 @@
 <img src=".github/art/middle.svg", alt="Middle" width="295" height="32">
 </div>
 <div align="center">
-<img src=".github/art/title.svg", alt="Title", width="165", height="64">
+<img src=".github/art/title.svg", alt="Title" width="165" height="64">
 </div>
 <div align="right">
 <img src=".github/art/middle_bottom.svg" alt="Middle" width="295" height="32">
