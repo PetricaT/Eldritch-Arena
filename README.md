@@ -1,8 +1,16 @@
 # Eldritch Arena
 
-<div align="left"> <img src=".github/art/top-left.png" alt="CornerLeft" width="32" height="32"> </div>
-<div align="center"> <img src=".github/art/title.svg". alt="Title", width="165", height="64"> </div>
-<div align="right"> <img src=".github/art/bottom-right.png" alt="CornerLeft" width="32" height="32"> </div>
+<div align="left">
+<img src=".github/art/corner.svg", alt="CornerLeft" width="32" height="32">
+<img src=".github/art/middle.svg", alt="Middle" width="295" height="32">
+</div>
+<div align="center">
+<img src=".github/art/title.svg", alt="Title", width="165", height="64">
+</div>
+<div align="right">
+<img src=".github/art/middle.svg" alt="Middle" width="295" height="32" style="transform:rotate(180deg);">
+<img src=".github/art/corner.svg" alt="CornerRight" width="32" height="32" style="transform:rotate(180deg);">
+</div>
 
 <div align="center">
 
