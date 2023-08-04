@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://gn0nv8wu0ltr"]
+[gd_scene load_steps=3 format=3 uid="uid://gn0nv8wu0ltr"]
+
+[ext_resource type="Texture2D" uid="uid://7havewa1st7o" path="res://src/textures/ui/main_menu.png" id="1_4u7xn"]
+[ext_resource type="Script" path="res://src/scripts/Menu.gd" id="1_jybcn"]
 
 [node name="Main" type="Node"]
 
@@ -9,3 +12,90 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jybcn")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_4u7xn")
+expand_mode = 2
+
+[node name="menu_buttons" type="VBoxContainer" parent="Menu"]
+custom_minimum_size = Vector2(10, 10)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.438021
+anchor_top = 0.335185
+anchor_right = 0.542188
+anchor_bottom = 0.707407
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="play_button" type="Button" parent="Menu/menu_buttons"]
+custom_minimum_size = Vector2(0, 85)
+layout_mode = 2
+text = "PLAY"
+
+[node name="options_button" type="Button" parent="Menu/menu_buttons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "OPTIONS"
+
+[node name="credits_button" type="Button" parent="Menu/menu_buttons"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+text = "TEMPRORARY"
+
+[node name="exit_button" type="Button" parent="Menu/menu_buttons"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "EXIT"
+
+[node name="options_container" type="VBoxContainer" parent="Menu"]
+visible = false
+custom_minimum_size = Vector2(360, 360)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.359375
+anchor_top = 0.25
+anchor_right = 0.640625
+anchor_bottom = 0.75
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="options_tab_container" type="TabContainer" parent="Menu/options_container"]
+layout_mode = 2
+
+[node name="gameplay" type="TabBar" parent="Menu/options_container/options_tab_container"]
+custom_minimum_size = Vector2(0, 329)
+layout_mode = 2
+
+[node name="video" type="TabBar" parent="Menu/options_container/options_tab_container"]
+visible = false
+custom_minimum_size = Vector2(0, 329)
+layout_mode = 2
+
+[node name="sound" type="TabBar" parent="Menu/options_container/options_tab_container"]
+visible = false
+custom_minimum_size = Vector2(0, 329)
+layout_mode = 2
+
+[node name="options_buttons" type="HBoxContainer" parent="Menu/options_container"]
+custom_minimum_size = Vector2(360, 30)
+layout_mode = 2
+alignment = 1
+
+[node name="apply" type="Button" parent="Menu/options_container/options_buttons"]
+layout_mode = 2
+text = "APPLY"
+
+[node name="cancel" type="Button" parent="Menu/options_container/options_buttons"]
+layout_mode = 2
+text = "CANCEL"
