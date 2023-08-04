@@ -8,8 +8,8 @@
 <img src=".github/art/title.svg", alt="Title", width="165", height="64">
 </div>
 <div align="right">
-<img src=".github/art/middle.svg" alt="Middle" width="295" height="32" style="transform:rotate(180deg);">
-<img src=".github/art/corner.svg" alt="CornerRight" width="32" height="32" style="transform:rotate(180deg);">
+<img src=".github/art/middle_bottom.svg" alt="Middle" width="295" height="32">
+<img src=".github/art/corner_bottom.svg" alt="CornerRight" width="32" height="32">
 </div>
 
 <div align="center">
